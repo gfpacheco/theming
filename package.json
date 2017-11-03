@@ -1,13 +1,10 @@
 {
-  "name": "theming",
+  "name": "@gfpacheco/theming",
   "version": "1.1.0",
   "description": "Unified CSSinJS theming solution for React",
   "main": "dist/cjs",
   "module": "dist/esm",
-  "files": [
-    "src",
-    "dist"
-  ],
+  "files": ["src", "dist"],
   "scripts": {
     "lint": "eslint .",
     "test": "cross-env BABEL_ENV=cjs ava",
@@ -25,41 +22,21 @@
     "babel:watch:esm": "npm run babel:esm -- --watch"
   },
   "ava": {
-    "files": [
-      "src/**/*test.js"
-    ],
-    "require": [
-      "babel-register",
-      "./.browser-env"
-    ],
+    "files": ["src/**/*test.js"],
+    "require": ["babel-register", "./.browser-env"],
     "babel": "inherit"
   },
   "nyc": {
-    "include": [
-      "src"
-    ],
-    "exclude": [
-      "src/*test*"
-    ],
+    "include": ["src"],
+    "exclude": ["src/*test*"],
     "all": true,
-    "reporter": [
-      "lcov",
-      "text"
-    ]
+    "reporter": ["lcov", "text"]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iamstarkov/theming.git"
   },
-  "keywords": [
-    "react",
-    "theme",
-    "theming",
-    "styled-components",
-    "jss",
-    "cssinjs",
-    "css-in-js"
-  ],
+  "keywords": ["react", "theme", "theming", "styled-components", "jss", "cssinjs", "css-in-js"],
   "author": "Vladimir Starkov <iamstarkov@gmail.com> (https://iamstarkov.com)",
   "license": "MIT",
   "bugs": {
